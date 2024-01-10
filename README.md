@@ -1,5 +1,5 @@
 # Text-Similarity
-An app that compares the similarity between two input texts.
+An app that compares the similarity between two input texts. I have used the Jaccard similarity coefficient to implement the similarity metric.
 
 ## To run the standalone script :
 ```
@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-### 3) Edit the script of the request with the text documents to be compared.
+### 3) Edit the script of the request to your Flask app (request.py) with the text documents to be compared.
 ```Python
 import requests
 
@@ -29,7 +29,7 @@ response = requests.post(url, json=data)
 
 print(response.json())
 ```
-### 4) Run the script with the request to your Flask app.
+### 4) Run the script with the request to your Flask app (request.py).
 ```
 python request.py
 ```
