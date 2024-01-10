@@ -33,3 +33,16 @@ print(response.json())
 ```
 python request.py
 ```
+## To run the Flask app in a docker container:
+### 1) Install Docker
+```
+pip install docker
+```
+### 2) Build the docker image
+```
+docker build --tag python-docker
+```
+### 3) Run the image to generate the container
+```
+docker run -d -p 5000:5000 python-docker
+```
